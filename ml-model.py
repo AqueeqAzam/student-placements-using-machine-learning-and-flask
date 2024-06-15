@@ -1,4 +1,4 @@
-// copy this code and paste it in google colab or jupyter lab
+# copy this code and paste it in google colab or jupyter lab
 import pandas as pd
 import numpy as np
 
@@ -28,6 +28,6 @@ accuracy_score(y_test, SVC(kernel='rbf').fit(x_train, y_train).predict(x_test))
 svc = SVC(kernel = 'rbf')
 svc.fit(x_train, y_train)
 
-// run this comman in other cell
+# run this comman in other cell
 import pickle
 pickle.dump(svc, open('modle.pkl', 'wb'))
